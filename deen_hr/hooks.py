@@ -8,29 +8,32 @@ app_license = "MIT"
 # Apps required for this custom app to function
 required_apps = ["hrms"]
 
-# Includes in <head>
-# ------------------
-
-# include js, css files in header of desk.html
-# app_include_css = "/assets/deen_hr/css/deen_hr.css"
-# app_include_js = "/assets/deen_hr/js/deen_hr.js"
+# Fixtures to be exported and installed across environments
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [["module", "=", "Deen HR"]],
+    },
+    {
+        "dt": "Shift Type",
+        "filters": [["name", "in", ["General Shift - DEEN HR"]]],
+    },
+    {
+        "dt": "Leave Type",
+        "filters": [
+            [
+                "leave_type_name",
+                "in",
+                ["Casual Leave", "Medical / Sick Leave", "Annual / Earned Leave"],
+            ]
+        ],
+    },
+]
 
 # Document Events
-# ---------------
 # Hook on document methods and events
-#
 # doc_events = {
 #     "Employee Checkin": {
-#         "after_insert": "deen_hr.events.on_employee_checkin"
-#     }
-# }
-
-# Scheduled Tasks
-# ---------------
-# scheduler_events = {
-#     "cron": {
-#         "*/15 * * * *": [
-#             "deen_hr.tasks.sync_biometric_logs"
-#         ]
+#         "after_insert": "deen_hr.api.on_employee_checkin"
 #     }
 # }

@@ -1,0 +1,46 @@
+[
+  {
+    "doctype": "Custom Field",
+    "name": "Employee-national_id",
+    "dt": "Employee",
+    "fieldname": "national_id",
+    "label": "National ID / NID",
+    "fieldtype": "Data",
+    "insert_after": "attendance_device_id",
+    "in_list_view": 0,
+    "in_standard_filter": 1,
+    "module": "Deen HR"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Employee-blood_group",
+    "dt": "Employee",
+    "fieldname": "blood_group",
+    "label": "Blood Group",
+    "fieldtype": "Select",
+    "options": "\nA+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-",
+    "insert_after": "national_id",
+    "in_list_view": 0,
+    "module": "Deen HR"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Employee-emergency_contact_person",
+    "dt": "Employee",
+    "fieldname": "emergency_contact_person",
+    "label": "Emergency Contact Person",
+    "fieldtype": "Data",
+    "insert_after": "blood_group",
+    "module": "Deen HR"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Employee-emergency_contact_phone",
+    "dt": "Employee",
+    "fieldname": "emergency_contact_phone",
+    "label": "Emergency Contact Phone",
+    "fieldtype": "Phone",
+    "insert_after": "emergency_contact_person",
+    "module": "Deen HR"
+  }
+]

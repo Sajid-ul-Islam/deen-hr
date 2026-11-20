@@ -1,0 +1,16 @@
+[
+  {
+    "doctype": "Shift Type",
+    "name": "General Shift - DEEN HR",
+    "start_time": "09:00:00",
+    "end_time": "18:00:00",
+    "enable_auto_attendance": 1,
+    "determine_check_in_and_check_out": "Strictly based on Log Type in Employee Checkin",
+    "working_hours_calculation_based_on": "First Check-in and Last Check-out",
+    "late_mark_grace_period": 15,
+    "early_exit_grace_period": 15,
+    "working_hours_threshold_for_half_day": 4.5,
+    "working_hours_threshold_for_absent": 2.0,
+    "docstatus": 0
+  }
+]

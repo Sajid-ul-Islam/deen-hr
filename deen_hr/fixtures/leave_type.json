@@ -1,0 +1,25 @@
+[
+  {
+    "doctype": "Leave Type",
+    "leave_type_name": "Casual Leave",
+    "is_paid": 1,
+    "is_carry_forward": 0,
+    "max_continuous_days_allowed": 3,
+    "docstatus": 0
+  },
+  {
+    "doctype": "Leave Type",
+    "leave_type_name": "Medical / Sick Leave",
+    "is_paid": 1,
+    "is_carry_forward": 0,
+    "docstatus": 0
+  },
+  {
+    "doctype": "Leave Type",
+    "leave_type_name": "Annual / Earned Leave",
+    "is_paid": 1,
+    "is_carry_forward": 1,
+    "is_earned_leave": 1,
+    "docstatus": 0
+  }
+]
