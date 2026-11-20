@@ -1,0 +1,21 @@
+{
+  "frappe": {
+    "site_url": "http://localhost:8000",
+    "api_key": "YOUR_FRAPPE_API_KEY",
+    "api_secret": "YOUR_FRAPPE_API_SECRET",
+    "timeout": 15
+  },
+  "device": {
+    "type": "zkteco",
+    "ip": "192.168.1.201",
+    "port": 4370,
+    "timeout": 10,
+    "password": 0,
+    "force_udp": false
+  },
+  "sync": {
+    "interval_seconds": 60,
+    "device_id": "MAIN_OFFICE_GATE",
+    "clear_device_logs_after_sync": false
+  }
+}
